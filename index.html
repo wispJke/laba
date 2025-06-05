@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме — Татарчук Вадим</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <h1>Татарчук Вадим</h1>
+        <p>Фронтенд-розробник</p>
+        <label>
+        <input type="checkbox" id="theme-toggle">
+        🌙 / ☀️
+    </label>
+        <header>
+    </label>
+
+
+    <section>
+        <h2>Контактна інформація</h2>
+        <ul class="contact-info">
+            <li><strong>Email:</strong> vadim.tatarchuk19@gmail.com</li>
+            <li><strong>Телефон:</strong> +380 67 587 1270</li>
+            <li><strong>Місто:</strong> Львів, Україна</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ціль</h2>
+        <p>Шукаю можливість приєднатися до команди як фронтенд-розробник, щоб реалізовувати практичні навички в розробці інтерфейсів і водночас розвиватися в напрямку сучасного веб-дизайну та технологій.</p>
+    </section>
+
+    <section>
+        <h2>Освіта</h2>
+        <ul>
+            <li>
+                <strong>Національний університет «Львівська політехніка»</strong><br>
+                Спеціальність: Кібербезпека<br>
+                Роки навчання: 2022 – 2026
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Досвід роботи</h2>
+        <article>
+            <h3>Frontend-розробник — SolaZola</h3>
+            <p><strong>Період:</strong> Червень 2024 – Серпень 2024</p>
+            <p><strong>Основні обов’язки:</strong></p>
+            <ul>
+                <li>Верстка сторінок за макетами Figma (HTML5, CSS3)</li>
+                <li>Інтеграція анімацій</li>
+                <li>Співпраця з командою дизайнерів</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Навички</h2>
+        <ul>
+            <li>Мови програмування: HTML5, CSS3, JavaScript</li>
+            <li>Інструменти: Git, GitHub, Docker, Kubernetes, AWS, Jenkins</li>
+            <li>Редактори коду: Visual Studio Code</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Мови</h2>
+        <ul>	
+            <li>Українська — рідна</li>
+            <li>Англійська — середній рівень</li>
+        </ul>
+    </section>
+</div>
+<section>
+  <h2>Коментарі попередніх роботодавців</h2>
+  <ul id="comments-list"></ul>
+</section>
+<footer>
+    <h2>Інформація про систему</h2>
+    <pre id="systemInfo"></pre>
+</footer>
+<script src="index.js"></script>
+
+<!-- Модальне вікно -->
+<div id="feedbackModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5);">
+  <div style="background:#fff; padding:20px; margin:100px auto; width:300px; border-radius:8px; position:relative;">
+    <h2>Зворотній зв'язок</h2>
+    <form action="https://formspree.io/f/mqabawrd" method="POST">
+      <label>Ім’я:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Телефон:<br><input type="tel" name="phone"></label><br><br>
+      <label>Повідомлення:<br><textarea name="message" rows="4" required></textarea></label><br><br>
+      <button type="submit">Відправити</button>
+    </form>
+    <button onclick="closeModal()" style="position:absolute; top:10px; right:10px;">&times;</button>
+  </div>
+</div>
+
+</body>
+</html>

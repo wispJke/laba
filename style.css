@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    gap: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #34495e;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info li {
+    flex: 1 1 200px;
+}
+
+article {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f2f2f2;
+    font-family: monospace;
+    border-top: 1px solid #ccc;
+}
+
+footer h2 {
+    margin-bottom: 0.5em;
+}
+/* Базова тема (денна) */
+body {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Темна тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Стилізація перемикача (можна покращити) */
+header label {
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+/* Темна тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-theme .container {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-theme .container {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme article {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+  input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
